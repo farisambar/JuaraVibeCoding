@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-ChildItem \"D:\\\\juaravibecoding31mei\\\\src\" -Recurse | Where-Object { !$_.PSIsContainer } | Select-Object FullName)",
+      "PowerShell(Get-ChildItem \"D:\\\\juaravibecoding31mei\\\\public\" -Recurse | Where-Object { !$_.PSIsContainer } | Select-Object FullName)",
+      "PowerShell(Get-ChildItem -Path \"D:\\\\juaravibecoding31mei\\\\src\" -Recurse -File | ForEach-Object { $_.FullName })",
+      "Bash(npm run *)",
+      "Bash(curl -s http://localhost:3000)",
+      "Bash(cmd.exe /c \"cd /d D:\\\\juaravibecoding31mei && D:\\\\node.exe node_modules\\\\vite\\\\bin\\\\vite.js --port 3000 --host 0.0.0.0 > nul 2>&1 &\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000/)",
+      "PowerShell(Get-Command *)",
+      "PowerShell(Stop-Process *)"
+    ]
+  }
+}
